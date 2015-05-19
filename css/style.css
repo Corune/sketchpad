@@ -1,0 +1,12 @@
+table {
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.clicked {
+    background-color: blue;
+}
