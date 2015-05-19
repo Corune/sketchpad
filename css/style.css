@@ -1,8 +1,25 @@
+#reset {
+    margin: auto;
+    margin-top: 25px;
+    display: block;
+    width: 500px;
+    height: 30px;
+}
+
+#clear {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+    width: 500px;
+    height: 30px;
+}
+
 table {
     border: 2px solid black;
     width: 500px;
     height: 500px;
-    margin: 50px auto;
+    margin: 0 auto;
     border-collapse: collapse;
     table-layout: fixed;
 }
