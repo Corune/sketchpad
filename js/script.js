@@ -29,13 +29,15 @@ $(document).ready(function(){
     genTable(table, 50);
 
     // Reseting the sketchpad when #reset is clicked
-    $("#reset").mouseup(function(){
-	var resolution = +prompt("What resolution would you like the square?");
+    $("#reset").click(function(){
+	var resolution = prompt("What resolution would you like the square?");
+	if (!resolution || isNaN(resolution))
+	    return;
 	resetTable(table, resolution);
     });
 
     // Clear table when #clear is clicked
-    $("#clear").mouseup(clearTable);
+    $("#clear").click(clearTable);
 
     // Checking to see if mouse is clicked down
     doc.mousedown(function(){
