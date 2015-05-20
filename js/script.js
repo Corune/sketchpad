@@ -47,6 +47,8 @@ $(document).ready(function(){
     });
 
     // If mouse is down, start drawing, if not, don't
+    // Using a delegator to catch dynamically
+    // generated table cells.
     table.on("mouseover", "td", function(event){
 	event.preventDefault();
 	thisOne = $(this);
